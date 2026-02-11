@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* Slow rotation animation */
+@keyframes rotateSlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Use this class on your rotating image */
+.rotate-slow {
+  animation: rotateSlow 12s linear infinite;
+}
+
+/* Extra optional blur class if you want to use CSS instead of Tailwind */
+.blur-overlay {
+  backdrop-filter: blur(50px);
+}
+
+/* Mobile responsiveness extra control (optional) */
+.hero-section {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
